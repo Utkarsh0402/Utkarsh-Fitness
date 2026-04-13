@@ -1,0 +1,121 @@
+
+ {% block title %}product {% endblock title %}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            margin: 0;
+        }
+
+        .header {
+            background: #0072ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #0072ff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ffeb3b;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #ffd600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>💪 Fitness Products</h1>
+        <p>Choose your perfect fitness partner</p>
+    </div>
+
+    <div class="products">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" alt="Protein Powder">
+            <h3>Protein Powder</h3>
+            <p class="price">₹999</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Dumbbells">
+            <h3>Dumbbells Set</h3>
+            <p class="price">₹1499</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Yoga Mat">
+            <h3>Yoga Mat</h3>
+            <p class="price">₹499</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Resistance Bands">
+            <h3>Resistance Bands</h3>
+            <p class="price">₹699</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

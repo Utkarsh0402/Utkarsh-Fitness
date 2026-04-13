@@ -1,0 +1,88 @@
+<section class="team">
+    <h2>Meet Our Team</h2>
+    <p class="subtitle">Our fitness experts who guide you to success</p>
+
+    <div class="team-container">
+
+        <!-- Member 1 -->
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trainer">
+            <h3>Rahul Sharma</h3>
+            <p>Fitness Trainer</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nutritionist">
+            <h3>Priya Verma</h3>
+            <p>Nutrition Expert</p>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Coach">
+            <h3>Amit Singh</h3>
+            <p>Workout Coach</p>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="member">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Yoga Trainer">
+            <h3>Sneha Gupta</h3>
+            <p>Yoga Trainer</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.team {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    background: #f4f7f9;
+    width: 220px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member h3 {
+    margin: 10px 0 5px;
+}
+
+.member p {
+    color: #555;
+}
+</style>
